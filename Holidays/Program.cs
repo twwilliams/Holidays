@@ -1,9 +1,6 @@
 ﻿using System;
 using System.IO;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
 
 namespace Holidays
@@ -16,13 +13,13 @@ namespace Holidays
             {
                 using (StreamReader sr = new StreamReader("2018-holidays.json"))
                 {
-                    string line = sr.ReadToEnd();
-                    Console.WriteLine(line);
+                    string json = sr.ReadToEnd();
+                    List<Holiday> holidays = JsonConvert.DeserializeObject<List<Holiday>>(json);
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine("The holidays file couldn't be read");
+                Console.WriteLine("The holidays file couldn't be read or parsed.");
                 Console.WriteLine(ex.Message);
             }
         }
