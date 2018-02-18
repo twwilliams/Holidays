@@ -5,9 +5,19 @@
     "work_holiday": true
   },
   {
+    "name": "Valentine's Day",
+    "date": "2018-02-14T00:00:00-07:00",
+    "work_holiday": false
+  },
+  {
     "name": "Presidents' Day",
     "date": "2018-02-19T00:00:00-07:00",
-    "work_holiday":  true
+    "work_holiday": true
+  },
+  {
+    "name": "St Patrick's Day",
+    "date": "2018-03-17T00:00:00-06:00",
+    "work_holiday": false
   },
   {
     "name": "Mother's Day",
@@ -22,7 +32,7 @@
   {
     "name": "Father's Day",
     "date": "2018-06-17T00:00:00-06:00",
-    "work_holiday": true
+    "work_holiday": false
   },
   {
     "name": "Independence Day",
@@ -38,6 +48,11 @@
     "name": "Columbus Day",
     "date": "2018-10-08T00:00:00-06:00",
     "work_holiday": true
+  },
+  {
+    "name": "Halloween",
+    "date": "2018-10-31T00:00:00-06:00",
+    "work_holiday": false
   },
   {
     "name": "Election Day",
